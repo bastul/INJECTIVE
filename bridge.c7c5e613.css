@@ -1,0 +1,96 @@
+.dark .v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner {
+    background: #161820;
+    border: none
+}
+
+.dark .v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner ::-webkit-scrollbar {
+    display: block;
+    width: 3px
+}
+
+.dark .v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner ::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.dark .v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner ::-webkit-scrollbar-thumb {
+    border-color: #5c606e
+}
+
+.dark .v-popper--theme-dropdown .v-popper__wrapper .v-popper__arrow-container {
+    display: none
+}
+
+.v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner {
+    background: #f2f2f2;
+    border: none
+}
+
+.v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner ::-webkit-scrollbar {
+    display: block;
+    width: 3px
+}
+
+.v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner ::-webkit-scrollbar-track {
+    background: transparent
+}
+
+.v-popper--theme-dropdown .v-popper__wrapper .v-popper__inner ::-webkit-scrollbar-thumb {
+    border-color: #5c606e
+}
+
+.v-popper--theme-dropdown .v-popper__wrapper .v-popper__arrow-container {
+    display: none
+}
+
+.progressing-dot:before {
+    --tw-border-opacity: 1;
+    animation: ripple 1.2s infinite;
+    border-color: #0dbfc8;
+    border-color: rgb(13 191 200/var(--tw-border-opacity));
+    border-radius: 9999px;
+    border-width: 4px;
+    content: "";
+    height: 1rem;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: 1rem
+}
+
+.dark .progressing-dot:before {
+    --tw-border-opacity: 1;
+    border-color: #00f2fe;
+    border-color: rgb(0 242 254/var(--tw-border-opacity))
+}
+
+.vertical-progress-bar span {
+    animation: loader .6s linear infinite;
+    background: linear-gradient(90deg, #0082fa 0, #0dbfc8 50%, #0082fa);
+    height: 100%;
+    position: absolute;
+    width: 25%
+}
+
+.dark .vertical-progress-bar span {
+    background: linear-gradient(90deg, #0082fa 0, #00f2fe 50%, #0082fa)
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(0)
+    }
+    to {
+        transform: translate(100%)
+    }
+}
+
+@keyframes ripple {
+    0% {
+        opacity: .75;
+        transform: scale(1.4) translate(-.5px, -.5px)
+    }
+    to {
+        opacity: 0;
+        transform: scale(2) translate(-.5px, -.5px)
+    }
+}
